@@ -48,7 +48,7 @@ def show_plot():
             c = (y_0 - y_1 - k * (x_0 - 2 * x_1)) / k
             x_left = np.linspace(0, x_1, 100)
             y_left = f_left(x_left, k, y_0, x_0)
-            x_right = np.linspace(x_1, 3*x_1, 100)
+            x_right = np.linspace(x_1, 4*x_1, 100)
             y_right = f_right(x_right, y_1, a, c)
             draw_plot(x_left, y_left, x_right, y_right, x_0, x_1, y_0, y_1)
 
@@ -62,14 +62,14 @@ def show_value():
             c = (y_0 - y_1 - k * (x_0 - 2 * x_1)) / k
             x_left = np.linspace(0, x_1, 100)
             y_left = f_left(x_left, k, y_0, x_0)
-            x_right = np.linspace(x_1, 3*x_1, 100)
+            x_right = np.linspace(x_1, 4*x_1, 100)
             y_right = f_right(x_right, y_1, a, c)
             if x_val < x_1:
                 y_val = k*x_val + (y_0 - k*x_0)
             else:
                 y_val = y_1 - a/(x_val - c)
             draw_plot(x_left, y_left, x_right, y_right, x_0, x_1, y_0, y_1, x_val, y_val)
-            st.write(f'Значение **y** в точке **x = {x_val}** равно **{y_val}**')
+            st.write(f'Значение **y** в точке **x = {x_val}** равно **{round(y_val, 2)}**')
 
 
 show_plot()
