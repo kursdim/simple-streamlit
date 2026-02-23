@@ -31,6 +31,7 @@ def draw_plot(x_left, y_left, x_right, y_right, x_0, x_1, y_0, y_1, x_val=None, 
     if x_val:
         plt.axvline(x=x_val, color='green', linestyle='--', label='x')
         plt.axhline(y=y_val, color='green', linestyle='--', label='y')
+        plt.title('График со значением')
     plt.grid(True)
     # plt.xticks([x_0, x_1])#, ['x_0', 'x_1'])
     # plt.yticks([y_0, y_1])#, ['y_0', 'y_1'])
