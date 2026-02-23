@@ -65,7 +65,7 @@ def show_value():
         else:
             y_val = y_1 - a/(x_val - c)
         draw_plot(x_left, y_left, x_right, y_right, x_0, x_1, y_0, y_1, x_val, y_val)
-        st.write(f'Значение y в точке x = {y_val}')
+        st.write(f'**Значение y в точке x = {x_val} равно {y_val}**')
 
 
 show_plot()
