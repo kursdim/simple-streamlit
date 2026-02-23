@@ -1,6 +1,5 @@
 import streamlit as st
 import matplotlib.pyplot as plt
-from plotly import graph_objects as go
 import numpy as np
 
 st.title("Калькулятор")
